@@ -21,6 +21,8 @@ for ip in `cat "$1"`; do
   ((count++))
   echo "$count. blocked: $ip"
 done
+echo
+echo `tput setaf 3`Total of $count IPs blocked.`tput sgr0`
 
 # Using command:
 # CloudFlareMassBlock.sh /path/ip-list.txt
